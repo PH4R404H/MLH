@@ -8,13 +8,13 @@
 <body>
     <div id="home">
         <header>
-        <img src="../../favicon.ico" class="half-size-image" alt="Home" onclick="window.location.href='../../index.html'">
+        <img src="../../favicon.ico" class="half-size-image" alt="Home" onclick="window.location.href='../../index.html'" title="Return to main Troubleshooter page.">
         <h1>Error 1</h1>
         
         <!--</header> -->
 
         <div id="search-bar" class="search-bar">
-        <input type="text" id="search" placeholder="Search Errors Here..." onkeyup="searchFunction()">
+        <input type="text" id="search" placeholder="Search Errors Here..." onkeyup="searchFunction()" title="Search for errors here.">
         <ul id="errorList">
             <li><a href="Error_1.html">Error 1</a></li>
             <li><a href="Error_2.html">Error 2</a></li>
@@ -29,15 +29,81 @@
             <li><a href="Error_11.html">Error 11</a></li>
             <li><a href="Error_12.html">Error 12</a></li>
         </ul></div>
-            <div><br><button class="button button-1" onclick="window.location.href='../html/Option_1.html'">Option 1</button></br>
-    </div></header>
+            <div><br><button title="Return to Option 1 page." class="button button-1" onclick="window.location.href='../html/Option_1.html'">Back to Option 1</button></br>
+            <h2>Error Description</h2>
+            </div></header>
+        <!-- Documented instruction BEGIN --><!--
+        <section id="solution">
+           <br><h1>A word on the error:</h1></br>
+           <br> Text Goes Here </br>
+           <br><h1>Solution:</h1></br>
+           <br><h1>Step 1:</h1></br>
+           <br> Text Goes Here </br>
+           <br><img src="../../favicon.ico"></br>
+           <br> Text Goes Here </br>
+           <br><h1>Step 2:</h1></br>
+           <br> Text Goes Here </br>
+           <br><img src="../../favicon.ico"></br>
+           <br> Text Goes Here </br>
+           <br><h1>Final word:</h1></br>
+           <br> Text Goes Here </br>
+       </section>
+    --><!-- Documented instruction END -->
+<!-- TEST FORM BEGIN -->
+
+<form id="regForm" action="">
+
+    <h1>Troubleshoot Error 1:</h1>
     
-       
+    <!-- One "tab" for each step in the form: -->
+    <div class="tab">Before we begin:
+      <p> Step 1: Text Goes Here </p>
+      <br><p><img src="../../favicon.ico"></p></br>
+      <p> Step 2: Text Goes Here </p>
+    </div>
+    
+    <div class="tab">Step 1:
+        <p> Step 1: Text Goes Here </p>
+        <br><p><img src="../../favicon.ico"></p></br>
+        <p> Step 2: Text Goes Here </p>
+    </div>
+    
+    <div class="tab">Step 2:
+        <p> Step 1: Text Goes Here </p>
+        <br><p><img src="../../favicon.ico"></p></br>
+        <p> Step 2: Text Goes Here </p>
+    </div>
+    
+    <div class="tab">Final Word:
+        <p> Step 1: Text Goes Here </p>
+        <br><p><img src="../../favicon.ico"></p></br>
+        <p> Step 2: Text Goes Here </p>
+    </div>
+    
+    <div style="overflow:auto;">
+      <div style="float:right;">
+        <button type="button" class="button button-1" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+        <button type="button" class="button button-1" id="nextBtn" onclick="nextPrev(1)">Next</button>
+      </div>
+    </div>
+    
+    <!-- Circles which indicates the steps of the form: -->
+    <div style="text-align:center;margin-top:40px;">
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+    </div>
+    
+    </form> 
+
+<!-- TEST FORM END -->
+
     </div>
      
      <footer>
     </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="../../script.js"></script>
 </body>
 </html>
